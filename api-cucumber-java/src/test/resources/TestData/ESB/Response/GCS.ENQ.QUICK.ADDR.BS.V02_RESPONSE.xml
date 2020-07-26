@@ -1,0 +1,63 @@
+<ns1:NagMsg xmlns:ns1="http://schemas.eu.nabgroup.com/GCS_ENQ_QUICK_ADDR_BS_V02/QASSPLITRS/">
+   <!--THIS IS A SIMULATED RESPONSE USING RATIONAL INTEGRATION TESTER. PLEASE CONTACT THE PROCESS AUTOMATION SERVICE CENTREE FOR FURTHER INFORMATION.-->
+   <ns1:GblMsgHdr>
+      <ns1:HdrInfo>
+         <ns1:HdrVersNbrId>001</ns1:HdrVersNbrId>
+      </ns1:HdrInfo>
+      <ns1:MsgResp>
+         <ns1:RespCode>0</ns1:RespCode>
+         <ns1:RsnCode>000</ns1:RsnCode>
+         <ns1:RsnDesc>Transaction Successful</ns1:RsnDesc>
+      </ns1:MsgResp>
+      <ns1:MsgIdn>
+         <ns1:SrcRoutInfo>
+            <ns1:Chnl>BSP</ns1:Chnl>
+         </ns1:SrcRoutInfo>
+      </ns1:MsgIdn>
+      <ns1:MsgAttrib>
+         <ns1:SrvcId>GCS_ENQ_QUICK_ADDR_BS_V02</ns1:SrvcId>
+         <ns1:MsgType>Response</ns1:MsgType>
+         <ns1:RespReqdInd>N</ns1:RespReqdInd>
+         <ns1:DtTm>
+            <ns1:LocalDtTm>2018-01-16 12:18:01</ns1:LocalDtTm>
+         </ns1:DtTm>
+      </ns1:MsgAttrib>
+      <ns1:PartyAttrib>
+         <ns1:CnsmrPrimFI>CB</ns1:CnsmrPrimFI>
+      </ns1:PartyAttrib>
+      <ns1:Status>
+         <ns1:StatusCode>-444</ns1:StatusCode>
+         <ns1:Severity>Warn</ns1:Severity>
+         <ns1:StatusDesc>Multiple addresses</ns1:StatusDesc>
+      </ns1:Status>
+   </ns1:GblMsgHdr>
+   <ns1:SIGNONMSGSRSV1>
+      <ns1:SONRS>
+         <ns1:CHANNELID>BSP</ns1:CHANNELID>
+      </ns1:SONRS>
+   </ns1:SIGNONMSGSRSV1>
+   <ns1:PAYLOAD>
+      <ns1:PAYLOADTYPE>QASSPLITRS</ns1:PAYLOADTYPE>
+      <ns1:ADDRLISTINFO>
+         <ns1:ADDRLISTINFOGRP>
+            <ns1:POTENTIALADDR>Testng North, St. Testolas Chare,TESTASTLE UPON TYNE XE1 1RJ</ns1:POTENTIALADDR>
+            <ns1:ADDRREF>XE11RJ-1</ns1:ADDRREF>
+         </ns1:ADDRLISTINFOGRP>
+         <ns1:ADDRLISTINFOGRP>
+            <ns1:POTENTIALADDR>Tes Box Design Group, St. Testolas Chare, TESTASTLE UPON TYNE XE1 1RJ</ns1:POTENTIALADDR>
+            <ns1:ADDRREF>XE11RJ-2</ns1:ADDRREF>
+         </ns1:ADDRLISTINFOGRP>
+      </ns1:ADDRLISTINFO>
+      <ns1:Status>
+         <ns1:StatusCode>-444</ns1:StatusCode>
+         <ns1:Severity>Warn</ns1:Severity>
+         <ns1:StatusDesc>Multiple Addresses Returned - User must select 1</ns1:StatusDesc>
+         <ns1:AdditionalStatus>
+            <ns1:StatusCode>-444</ns1:StatusCode>
+            <ns1:ServerStatusCode>444</ns1:ServerStatusCode>
+            <ns1:Severity>Warn</ns1:Severity>
+            <ns1:StatusDesc>QuickAddress - Multiple Addresses Returned</ns1:StatusDesc>
+         </ns1:AdditionalStatus>
+      </ns1:Status>
+   </ns1:PAYLOAD>
+</ns1:NagMsg>

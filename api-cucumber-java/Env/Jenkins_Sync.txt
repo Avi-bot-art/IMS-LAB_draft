@@ -1,0 +1,7 @@
+cd SCORPUS_Cognizant_Testing
+dir /s /B *.java > SourceCode.txt
+dir /s /B *.jar > JARFiles.txt
+Echo %PATH%
+javac -cp ".;.\ExternalJARs\*;.\lib\*" @SourceCode.txt
+cd com
+java  -cp ".;..\ExternalJARs\*;.\lib\*" cognizant/test/MicroserviceE2E_Alexa
